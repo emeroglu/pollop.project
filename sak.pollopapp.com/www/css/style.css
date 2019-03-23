@@ -1,0 +1,1164 @@
+.p-color
+{
+	color: #F96D2B;
+}
+
+.p-color-grey
+{
+	color: rgb(121, 117, 115);
+}
+
+.p-color-grey-2
+{
+	color: #A5A4A4;
+}
+
+.p-background-color
+{
+	background-color: #F96D2B;
+}
+
+.p-font
+{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.p-none
+{
+	display: none;
+}
+
+.p-disp
+{
+	display: initial;
+}
+
+.p-z-0
+{
+	z-index: 0;
+}
+
+.p-z-1
+{
+	z-index: 1;
+}
+
+.p-z-2
+{
+	z-index: 2;
+}
+
+.p-z-3
+{
+	z-index: 3;
+}
+
+.p-z-4
+{
+	z-index: 4;
+}
+
+.p-z-5
+{
+	z-index: 5;
+}
+
+header
+{	
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	z-index: 1;	
+}
+
+header logo
+{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	padding: 5px;
+	left: calc(50% - 20px);
+}
+
+header logo img
+{
+	position: absolute;
+	width: 100%;
+}
+
+wall
+{	
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 50px);
+	top:50px;
+	padding: 15px;			
+}
+
+wall wall-item
+{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 140px;	
+	padding: 0px;
+	margin-top: 25px;		
+	border-bottom: 2px solid #F96D2B;
+	background-color: #F7EEEA;
+}
+
+wall wall-item.p-show
+{
+	opacity: 1;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+wall wall-item.p-hide
+{
+	opacity: 0;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+wall wall-item:first-child
+{
+	margin-top: 5px;
+}
+
+wall wall-item content
+{
+	position: absolute;
+	width: calc(100% - 20px);
+	height: 90px;
+	padding: 10px;		
+}
+
+wall wall-item content avatar
+{
+	position: absolute;
+	width: 70px;
+	height: 70px;	
+	padding: 5px;		
+}
+
+wall wall-item content avatar img
+{
+	position: absolute;
+	width: calc(100% - 10px);
+	border-radius: 50%;
+}
+
+wall wall-item content name
+{
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 30px;
+	left: 75px;
+	padding-left: 15px;
+	font-size: 4vw;	
+	font-weight: 700;	
+	line-height: 250%;
+}
+
+wall wall-item content asks
+{	
+	display: none;
+	font-size: 4vw;	
+	font-weight: 400;	
+}
+
+wall wall-item content question
+{
+	position: absolute;
+    width: calc(100% - 60px);
+    height: 50px;
+    top: 40px;
+    left: 75px;
+    padding-left: 15px;
+    font-size: 4vw;
+    font-weight: 400;	
+}
+
+wall wall-item footer
+{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	top: 100px;	
+	background-color: #fff;
+	border-top: 2px solid #F96D2B;
+	border-bottom: 2px solid #F96D2B;
+}
+
+wall wall-item footer attendance
+{
+	position: absolute;
+	width: 45%;
+	height: 40px;
+	left: 5%;
+	
+	text-align: left;		
+}
+
+wall wall-item footer attendance icon
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6.5vw;
+	line-height: 150%;	
+}
+
+wall wall-item footer attendance text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;		
+}
+
+wall wall-item footer remaining
+{
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	left: 50%;		
+	text-align: left;
+}
+
+wall wall-item footer remaining icon
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6vw;
+	line-height: 175%;
+}
+
+wall wall-item footer remaining text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;
+}
+
+poll
+{	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: #fff;
+}
+
+poll.p-show
+{
+	top: 0%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll.p-hide
+{
+	top: 100%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll content
+{
+	position: absolute;
+	width: calc(100% - 20px);
+	height: 100px;
+	padding: 15px;		
+}
+
+poll content avatar
+{
+	position: absolute;
+	width: 70px;
+	height: 70px;	
+	padding: 5px;		
+}
+
+poll content avatar img
+{
+	position: absolute;
+	width: calc(100% - 10px);
+	border-radius: 50%;
+}
+
+poll content name
+{
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 30px;
+	left: 75px;
+	padding-left: 15px;
+	font-size: 4vw;	
+	font-weight: 700;	
+	line-height: 250%;
+}
+
+poll content asks
+{	
+	font-size: 4vw;	
+	font-weight: 400;	
+}
+
+poll content question
+{
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 50px;
+	top: 50px;
+	left: 75px;
+	padding-left: 15px;
+	font-size: 4.5vw;	
+	font-weight: 400;	
+}
+
+poll footer
+{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	top: 100px;	
+	background-color: #fff;
+	border-top: 2px solid #F96D2B;
+	border-bottom: 2px solid #F96D2B;
+}
+
+poll footer attendance
+{
+	position: absolute;
+	width: 45%;
+	height: 40px;
+	left: 5%;	
+	text-align: left;		
+}
+
+poll footer attendance icon
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6.5vw;
+	line-height: 150%;	
+}
+
+poll footer attendance text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;		
+}
+
+poll footer remaining
+{
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	left: 50%;		
+	text-align: left;
+}
+
+poll footer remaining icon
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6vw;
+	line-height: 175%;
+}
+
+poll footer remaining text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;
+}
+
+poll choices
+{
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 140px);	
+}
+
+poll choices choice
+{
+	position: relative;
+	float: left;
+	width: 84%;
+	min-height: 50px;
+	left: 8%;
+	margin-top: 7%;
+	border-top: 2px solid #F96D2B;
+	border-bottom: 2px solid #F96D2B;	
+	background-color: #F7EEEA;	
+}
+
+poll choices choice text
+{
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 50px;	
+	text-align: center;
+	font-size: 4.5vw;
+	font-weight: 400;
+	line-height: 50px;
+}
+
+poll choices choice.p-initial
+{
+	background-color: #F7EEEA;
+	color: #797573;	
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll choices choice.p-selected
+{	
+	background-color: #F96D2B;
+	color: #fff;	
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll bottom-bar
+{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	text-align: center;
+	color:#fff;
+	font-size: 4.5vw;
+	line-height: 50px;
+}
+
+poll-images
+{	
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: #fff;
+}
+
+poll-images.p-show
+{
+	top: 0%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-images.p-hide
+{
+	top: 100%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-images content
+{
+	position: absolute;
+	width: calc(100% - 20px);
+	height: 100px;
+	padding: 15px;		
+}
+
+poll-images content avatar
+{
+	position: absolute;
+	width: 70px;
+	height: 70px;	
+	padding: 5px;		
+}
+
+poll-images content avatar img
+{
+	position: absolute;
+	width: calc(100% - 10px);
+	border-radius: 50%;
+}
+
+poll-images content name
+{
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 30px;
+	left: 75px;
+	padding-left: 15px;
+	font-size: 4vw;	
+	font-weight: 700;	
+	line-height: 250%;
+}
+
+poll-images content asks
+{	
+	font-size: 4vw;	
+	font-weight: 400;	
+}
+
+poll-images content question
+{
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 50px;
+	top: 50px;
+	left: 75px;
+	padding-left: 15px;
+	font-size: 4.5vw;	
+	font-weight: 400;	
+}
+
+poll-images footer
+{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	top: 100px;	
+	background-color: #fff;
+	border-top: 2px solid #F96D2B;
+	border-bottom: 2px solid #F96D2B;
+}
+
+poll-images footer attendance
+{
+	position: absolute;
+	width: 45%;
+	height: 40px;
+	left: 5%;	
+	text-align: left;		
+}
+
+poll-images footer attendance icon
+{	
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6.5vw;
+	line-height: 150%;	
+}
+
+poll-images footer attendance text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;		
+}
+
+poll-images footer remaining
+{
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	left: 50%;		
+	text-align: left;
+}
+
+poll-images footer remaining icon
+{	
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6vw;
+	line-height: 175%;
+}
+
+poll-images footer remaining text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;
+}
+
+poll-images choices
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+poll-images choices choice
+{
+	position: relative;
+	float: left;
+	width: 32vw;
+	height: 32vw;	
+	margin-left: 12vw;
+	margin-top: 15vw;			
+}
+
+poll-images choices choice:nth-child(1),poll-images choices choice:nth-child(2)
+{
+	margin-top: 5%;
+}
+
+poll-images choices choice photo
+{
+	position: absolute;
+	width: 100%;	
+}
+
+poll-images choices choice photo img
+{
+	position: absolute;
+	width: 100%;
+}
+
+poll-images choices choice choice-text
+{
+	position: absolute;
+	width: 100%;
+	height: 35px;
+	top: 32vw;		
+}
+
+poll-images choices choice choice-text.p-initial
+{
+	background-color: #fff;	
+	color: #797573;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-images choices choice choice-text.p-selected
+{
+	background-color: #F96D2B;	
+	color: #fff;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-images choices choice choice-text text
+{
+	position: absolute;
+	width: 100%;	
+	height: 35px;
+	text-align: center;
+	font-size: 4vw;
+	line-height: 35px;
+}
+
+poll-images view
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+poll-images view.p-show
+{
+	opacity: 1;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-images view.p-hide
+{
+	opacity: 0;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-images view mask
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 5;
+}
+
+poll-images view photo
+{
+	position: absolute;
+	width: 60vh;
+	left: calc(50% - 30vh);
+	top: 20vh;
+	z-index: 6;
+}
+
+poll-images view photo img
+{
+	position: absolute;
+	width: 100%;
+}
+
+poll-images view choose
+{
+	position: absolute;
+	width: 100%;
+	height: 50px;	
+	bottom: 0px;	
+	z-index: 5;
+	text-align: center;
+	font-size: 5vw;
+	color:#fff;
+	line-height: 50px;
+}
+
+poll-images bottom-bar
+{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	text-align: center;
+	color:#fff;
+	font-size: 4.5vw;
+	line-height: 50px;
+}
+
+poll-title
+{	
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: #fff;
+}
+
+poll-title.p-show
+{
+	top: 0%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-title.p-hide
+{
+	top: 100%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-title content
+{
+	position: absolute;
+	width: calc(100% - 20px);
+	height: 100px;
+	padding: 15px;		
+}
+
+poll-title content avatar
+{
+	position: absolute;
+	width: 70px;
+	height: 70px;	
+	padding: 5px;		
+}
+
+poll-title content avatar img
+{
+	position: absolute;
+	width: calc(100% - 10px);
+	border-radius: 50%;
+}
+
+poll-title content name
+{
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 30px;
+	left: 75px;
+	padding-left: 15px;
+	font-size: 4vw;	
+	font-weight: 700;	
+	line-height: 250%;
+}
+
+poll-title content asks
+{	
+	font-size: 4vw;	
+	font-weight: 400;	
+}
+
+poll-title content question
+{
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 50px;
+	top: 50px;
+	left: 75px;
+	padding-left: 15px;
+	font-size: 4.5vw;	
+	font-weight: 400;	
+}
+
+poll-title footer
+{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	top: 100px;	
+	background-color: #fff;
+	border-top: 2px solid #F96D2B;
+	border-bottom: 2px solid #F96D2B;
+}
+
+poll-title footer attendance
+{
+	position: absolute;
+	width: 45%;
+	height: 40px;
+	left: 5%;	
+	text-align: left;		
+}
+
+poll-title footer attendance icon
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6.5vw;
+	line-height: 150%;	
+}
+
+poll-title footer attendance text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;		
+}
+
+poll-title footer remaining
+{
+	position: absolute;
+	width: 45%;
+	height: 30px;
+	left: 50%;		
+	text-align: left;
+}
+
+poll-title footer remaining icon
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	left: 45px;
+	font-size: 6vw;
+	line-height: 175%;
+}
+
+poll-title footer remaining text
+{
+	position: absolute;
+	width: calc(100% - 40px);
+	height: 40px;
+	right: 0px;	
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 250%;
+}
+
+poll-title choices
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+poll-title choices choice
+{
+	position: relative;
+	float: left;
+	width: 80vw;
+	height: 25vw;	
+	margin-left: 10vw;
+	margin-top: 5vw;			
+}
+
+poll-title choices choice.p-initial
+{
+	background-color: #F7EEEA;	
+	color:#797573;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-title choices choice.p-selected
+{
+	background-color: #F96D2B;	
+	color:#fff;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-title choices choice photo
+{
+	position: absolute;
+	width: 25vw;	
+}
+
+poll-title choices choice photo img
+{
+	position: absolute;
+	width: 100%;
+}
+
+poll-title choices choice choice-title
+{
+	position: absolute;
+    width: 70vw;
+    height: 15vw;
+    left: 30vw;
+    padding-left: 0vw;
+    text-align: left;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 15vw;
+}
+
+poll-title choices choice text
+{
+	position: absolute;
+    width: 50vw;
+    height: 15vw;
+    top: 11vw;
+    left: 30vw;
+    padding-left: 0vw;
+    text-align: left;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 4vw;
+}
+
+poll-title bottom-bar
+{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	text-align: center;
+	color:#fff;
+	font-size: 4.5vw;
+	line-height: 50px;
+}
+
+message-box
+{
+	position: absolute;
+	width: 100%;
+	height: 50px;	
+	background-color: #F7EEEA;	
+	border-top: 2px solid #F96D2B;
+	text-align: center;
+	font-size: 5vw;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+message-box.p-show
+{
+	bottom: 0px;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+message-box.p-hide
+{
+	bottom: -50px;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+splash
+{
+	position: absolute;
+	width:100%;
+	height: 100%;	
+}
+
+splash.p-show
+{
+	opacity: 1;
+	-webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);	
+}
+
+splash.p-hide
+{
+	opacity: 0;
+	-webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);	
+}
+
+splash logo
+{
+	position: absolute;
+	width: 100vw;
+	height: 100vw;
+	top: 10vh;		
+}
+
+splash logo.p-show
+{
+	opacity: 1;
+	-webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+splash logo.p-hide
+{
+	opacity: 0;
+	-webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+splash logo img
+{
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	top: 25px;
+}
+
+splash facebook
+{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	left: 0px;	
+	background-color: #3D5B99;
+}
+
+splash facebook.p-show
+{
+	bottom: 0px;
+	-webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+splash facebook.p-hide
+{
+	bottom: -60px;
+	-webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+splash facebook logo
+{
+	position: absolute;
+	width: 25%;
+	height: 60px;
+	top: 0px;	
+}
+
+splash facebook logo img
+{
+	position: absolute;
+	width: 45px;
+	top: 5px;
+	left: 60%;
+}
+
+splash facebook text
+{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	left: 5%;
+	padding-left: 0px;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 60px;
+	color: #fff;	
+}

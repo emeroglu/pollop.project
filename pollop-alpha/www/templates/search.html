@@ -1,0 +1,50 @@
+<ctrl ng-controller="SearchCtrl"> 
+
+    <target class="p-portrait p-smartphone">   
+
+        <div class="p-width-100 p-loading p-border-top-color {{state_loading}}"></div>
+
+        <div class="p-width-100">
+        
+            <div class="p-col p-one">
+
+                <label class="item item-input">
+                    <input type="text" placeholder="{{searchPlaceholder}}" ng-change="search()" ng-model="searchText" />
+                </label>
+
+            </div>    
+
+        </div>
+
+        <ion-list class="p-search-result-poll disable-user-behavior">
+
+            <ion-item class="card item p-search-item {{sh_searchResults}}">
+            
+                <ion-item class="item item-avatar item-button-right p-search-header">
+                    <img src="{{resultImage}}">                
+                    <p class="{{sh_titleBig}}">{{resultTitle}}</p>
+                    <button class="button button-clear">
+                        <i class="icon ion-ios-albums p-color {{d_searchResultIcon}}"></i>
+                    </button>                        
+                </ion-item> 
+
+                <ion-item class="item-divider item p-search-footer p-background-color-light {{d_searchResultFooter}}"> 
+                    <div class="row">
+                        <div class="col col-50 p-text-align-center p-color-gray p-border-left-color">
+                            <i class="icon ion-person p-color"></i>
+                            <div class="p-info">23 kişi</div>                        
+                        </div>
+                        <div class="col col-50 p-text-align-center p-color-gray p-border-left-color">
+                            <i class="icon ion-clock p-color"></i>
+                            <div class="p-info">20 dk.</div>                        
+                        </div>                                    
+                    </div>                          
+                </ion-item>
+
+            </ion-item>
+
+        </ion-list>    
+
+    </target>
+
+</ctrl>

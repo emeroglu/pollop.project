@@ -1,0 +1,41 @@
+<ctrl ng-controller="SlideCtrl">
+
+	<div class="p-height-100">
+
+		<ion-slide-box class="p-slider" active-slide="activeSlide" on-slide-changed="onSlideChanged($index)" show-pager="false">
+
+			<ion-slide class="p-slide">
+
+				<discover></discover>
+
+			</ion-slide>
+
+			<ion-slide class="p-slide">
+
+				<private-polls></private-polls>
+
+			</ion-slide>
+			
+			<ion-slide class="p-slide">
+															
+				<landing></landing>								
+
+			</ion-slide>
+
+			<ion-slide class="p-slide">
+
+				<notifications></notifications>
+
+			</ion-slide>
+
+			<ion-slide class="p-slide">
+
+				<search></search>
+
+			</ion-slide>
+
+		</ion-slide-box>
+
+	</div>
+
+</ctrl>

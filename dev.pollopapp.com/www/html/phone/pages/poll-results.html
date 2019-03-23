@@ -1,0 +1,46 @@
+<ctrl ng-controller="PollResultsCtrl">
+
+	<view class="{{statePollResultsPage}}">
+		
+		<content>
+        <avatar>
+          <img src="{{poll.avatar}}" />
+        </avatar>
+        <text>
+          <name class="p-font">
+            {{poll.title}}
+            <asks class="p-font p-color-grey"> soruyor:</asks>
+          </name>
+          <question class="p-font p-color-grey">
+           {{poll.question}}
+          </question>
+        </text>
+      </content>
+      <footer>
+        <attendance>
+          <icon>
+            <i class="icon ion-ios-people p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.attendance}} kişi</text>
+        </attendance>
+        <remaining>
+          <icon>
+            <i class="icon ion-clock p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.remaining}} dk.</text>
+        </remaining>
+      </footer>
+      <ion-content style="position: absolute;width: 100%;height: calc(100% - 200px);top: 150px;">
+        <choices>
+          <choice ng-repeat="choice in poll.choices" ng-click="choose(choice.index)" class="{{choice.state}}">
+            <text class="p-font">{{choice.text}}</text>
+            <percent>{{bars[choice.index].width}}</percent>
+            <bar style="{{bars[choice.index].style}}"></bar>           
+          </choice>          
+        </choices>
+      </ion-content>
+      <bottom-bar class="p-background-color p-font" ng-click="close()">Geri Dön</bottom-bar> 
+
+	</view>
+
+</ctrl>

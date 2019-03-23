@@ -1,0 +1,1335 @@
+<ion-view>
+ 
+    <ion-side-menus>
+ 
+        <ion-side-menu-content>
+        
+            <ion-header-bar align-title="left" class="bar-energized p-header-bar" ng-click="goFullscreen()">                            
+      
+                <h1 class="title" style="text-align:center;">pollop</h1>                
+
+            </ion-header-bar>
+        
+            <ion-header-bar class="bar-subheader p-icon-bar">
+
+                <div class="row p-icon-bar-row">
+                    
+                    <div class="col p-icon-bar-col {{icons[0]}}" ng-click="changeSlide(0)">
+                        <i class="icon ion-planet"></i>
+                    </div>
+                    
+                    <div class="col p-icon-bar-col {{icons[1]}}" ng-click="changeSlide(1)">
+                        <i class="icon ion-chatbox-working"></i>
+                    </div>
+                    
+                    <div class="col p-icon-bar-col {{icons[2]}}" ng-click="changeSlide(2)">
+                        <i class="icon ion-home"></i>
+                    </div>
+                    
+                    <div class="col p-icon-bar-col {{icons[3]}}" ng-click="changeSlide(3)">
+                        <i class="icon ion-android-notifications"></i>
+                    </div>
+                    
+                    <div class="col p-icon-bar-col {{icons[4]}}" ng-click="changeSlide(4)">
+                        <i class="icon ion-search"></i>
+                    </div> 
+
+                </div>
+
+            </ion-header-bar>
+
+            <div class="p-new" ng-click="getPhoto()">
+                <i class="icon ion-edit"></i>
+            </div>
+
+            <div class="p-new-left" ng-click="toggleLeftSideMenu()">
+                <i class="icon ion-person"></i>
+            </div>
+
+            <div class="p-options {{showOptions}}">
+
+                <div class="row">
+
+                    <div class="col col-20"></div>
+                    <div class="col col-20">
+                        
+                        Kişi
+
+                    </div>
+                    <div class="col col-20 selected">
+                        
+                        Anket
+
+                    </div>
+                    <div class="col col-20">
+                        
+                        Sayfa
+
+                    </div>
+                    <div class="col col-20"></div>
+
+                </div>
+
+            </div>
+
+            <ion-slide-box class="has-header has-subheader p-slider" active-slide="activeSlide" on-slide-changed="onSlideChanged($index)" show-pager="false">
+
+                <ion-slide class="p-slide">
+
+                    <ion-content class="p-discover">                        
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="img/sports.jpg" />                                                                 
+
+                                    <h2>Spor</h2>
+
+                                    <i class="icon ion-android-bicycle"></i>  
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="img/cars.jpg" />                                    
+
+                                    <h2>Arabalar</h2>
+
+                                    <i class="icon ion-model-s"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div> 
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="img/fashion.jpg" />                                                                        
+
+                                    <h2>Moda</h2>
+
+                                    <i class="icon ion-tshirt"></i> 
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="img/fun.jpg" />                                                                        
+
+                                    <h2>Eğlence</h2>
+
+                                    <i class="icon ion-happy"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div> 
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="img/health.jpg" />                                                                        
+
+                                    <h2>Sağlık</h2>
+
+                                    <i class="icon ion-ios-medkit"></i> 
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="img/magazin.jpg" />                                                                        
+
+                                    <h2>Magazin</h2>
+
+                                    <i class="icon ion-ios-camera"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div> 
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://media.boomads.com/images/article/312/2014/11/yuksek-teknoloj-20141811034203766.jpg?ver=?ver=qwrBzwTCERz7ru9bXPDNrLmP2Py" />                                                                        
+
+                                    <h2>Teknoloji</h2>
+
+                                    <i class="icon ion-monitor"></i> 
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQ1Dn6TJ6_DYp6Q5YJAGbFH9OXqq4vIR7T9v4wUHse_GrPTdkFy9g" />                                                                        
+
+                                    <h2>Alışveriş</h2>
+
+                                    <i class="icon ion-bag"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div> 
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="img/gow.jpg" />                                                                        
+
+                                    <h2>Oyun</h2>
+
+                                    <i class="icon ion-ios-game-controller-b"></i> 
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://yumurtaliekmek.com/wp-content/uploads/2015/03/sinema-egitimleri-0403.jpg" />                                                                        
+
+                                    <h2>Dizi - Film</h2>
+
+                                    <i class="icon ion-ios-film"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://www.jiu.edu/sites/jiu.edu/files/styles/blog_post_full/public/images/blog/celebrate-graduation-day.jpg?itok=DEoJ4TIj" />                                                                        
+
+                                    <h2>Eğitim</h2>
+
+                                    <i class="icon ion-university"></i> 
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://img.haberler.com/haber/501/ekonomi-3-3028501_2826_o.jpg" />                                                                        
+
+                                    <h2>Ekonomi</h2>
+
+                                    <i class="icon ion-cash"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div> 
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://media4.onsugar.com/files/2014/02/24/906/n/1922729/af9a0694a71b484e_cooking-woman.jpg.xxxlarge.jpg" />                                                                        
+
+                                    <h2>Yemek</h2>
+
+                                    <i class="icon ion-pizza"></i> 
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://www.macmillandictionaries.com/wp-content/uploads/2011/06/Features_Competition2.png" />                                                                        
+
+                                    <h2>Yarışma</h2>
+
+                                    <i class="icon ion-ribbon-a"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div> 
+
+                        <div class="row">
+
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://www.akustiksanatevi.com/wp-content/uploads/2012/10/gitar1.jpg" />                                                                        
+
+                                    <h2>Müzik</h2>
+
+                                    <i class="icon ion-music-note"></i> 
+
+                                </ion-item>
+
+                            </div>
+                            <div class="col">
+                                
+                                <ion-item class="card">
+
+                                    <img src="http://e27.co/wp-content/uploads/2013/03/Travel-signs.jpg" />                                                                        
+
+                                    <h2>Gezme - Tozma</h2>
+
+                                    <i class="icon ion-android-train"></i> 
+
+                                </ion-item>
+
+                            </div>
+
+                        </div> 
+
+                        <<div style="width:100%;height:75px;"></div>                       
+
+                    </ion-content>
+
+                </ion-slide>
+
+                <ion-slide class="p-slide">
+
+                    <ion-content class="p-messages-content">
+
+                        <ion-list>
+
+                            <ion-refresher pulling-text="" pulling-icon="none" on-refresh="refresh()" spinner="crescent"></ion-refresher>
+
+                            <ion-item class="item item-avatar p-item p-unread item-button-right">
+                                <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10338221_10152576853520996_5185319332419852678_n.jpg?oh=1050ca99ab67aecce729b25a462b8393&amp;oe=5623A992&amp;__gda__=1444212935_5bd3e7b096d2e0e3740093c3cadfc9f1">                                
+                                <h2 class="ng-binding">Erhan Emre Eroğlu</h2>
+                                <p>2015.07.12 - 22:05</p>  
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-paper-airplane p-color"></i>
+                                </button>                                                      
+                            </ion-item>                        
+
+                            <ion-item class="item item-avatar p-item p-unread item-button-right">
+                                <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/10471269_10152855629422229_1232945715976050597_n.jpg?oh=61e999b5120ea753c79e6c85aa9c3c7d&amp;oe=564F8040">                                
+                                <h2 class="ng-binding">Musa Sönmez</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-reply p-color"></i>
+                                </button>                                                                 
+                            </ion-item>
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/11540901_10153441484688535_6126204076365582999_n.jpg?oh=38f6fdfdbfe27d687d66756a633a6500&amp;oe=56148787&amp;__gda__=1448187346_83fa117562d0c692359497306733e329">
+                                <h2 class="ng-binding">Kaan İlkyaz</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-reply"></i>
+                                </button>                                                                 
+                            </ion-item>
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xat1/v/t1.0-9/11225278_10152997309892582_5347608297812791019_n.jpg?oh=173c35b48fd6306585076048bc56fedc&amp;oe=564EB150&amp;__gda__=1448797842_1196a544c00a3159abf91a002b6f0848">
+                                <h2 class="ng-binding">Kaan Telciler</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-paper-airplane"></i>
+                                </button>                                                                 
+                            </ion-item>
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/10471269_10152855629422229_1232945715976050597_n.jpg?oh=61e999b5120ea753c79e6c85aa9c3c7d&amp;oe=564F8040">                                
+                                <h2 class="ng-binding">Musa Sönmez</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-reply"></i>
+                                </button>                                                                 
+                            </ion-item> 
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/11540901_10153441484688535_6126204076365582999_n.jpg?oh=38f6fdfdbfe27d687d66756a633a6500&amp;oe=56148787&amp;__gda__=1448187346_83fa117562d0c692359497306733e329">
+                                <h2 class="ng-binding">Kaan İlkyaz</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-paper-airplane"></i>
+                                </button>                                                                 
+                            </ion-item>
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xat1/v/t1.0-9/11225278_10152997309892582_5347608297812791019_n.jpg?oh=173c35b48fd6306585076048bc56fedc&amp;oe=564EB150&amp;__gda__=1448797842_1196a544c00a3159abf91a002b6f0848">
+                                <h2 class="ng-binding">Kaan Telciler</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-reply"></i>
+                                </button>                                                                 
+                            </ion-item> 
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10338221_10152576853520996_5185319332419852678_n.jpg?oh=1050ca99ab67aecce729b25a462b8393&amp;oe=5623A992&amp;__gda__=1444212935_5bd3e7b096d2e0e3740093c3cadfc9f1">                                
+                                <h2 class="ng-binding">Erhan Emre Eroğlu</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-paper-airplane"></i>
+                                </button>                                                                 
+                            </ion-item>
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/11540901_10153441484688535_6126204076365582999_n.jpg?oh=38f6fdfdbfe27d687d66756a633a6500&amp;oe=56148787&amp;__gda__=1448187346_83fa117562d0c692359497306733e329">
+                                <h2 class="ng-binding">Kaan İlkyaz</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-reply"></i>
+                                </button>                                                                 
+                            </ion-item> 
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xat1/v/t1.0-9/11225278_10152997309892582_5347608297812791019_n.jpg?oh=173c35b48fd6306585076048bc56fedc&amp;oe=564EB150&amp;__gda__=1448797842_1196a544c00a3159abf91a002b6f0848">
+                                <h2 class="ng-binding">Kaan Telciler</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-paper-airplane"></i>
+                                </button>                                                                 
+                            </ion-item>
+
+                            <ion-item class="item item-avatar p-item item-button-right">
+                                <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/11540901_10153441484688535_6126204076365582999_n.jpg?oh=38f6fdfdbfe27d687d66756a633a6500&amp;oe=56148787&amp;__gda__=1448187346_83fa117562d0c692359497306733e329">
+                                <h2 class="ng-binding">Kaan İlkyaz</h2>
+                                <p>2015.07.12 - 22:05</p> 
+                                <button class="button button-clear p-first-button">
+                                    <i class="icon ion-reply"></i>
+                                </button>                                                                 
+                            </ion-item>                        
+
+                        </ion-list>
+
+                    </ion-content>
+
+                </ion-slide>
+
+                <ion-slide class="p-slide">
+
+                    <ion-content class="p-timeline-content">                                        
+
+                        <ion-list>
+
+                            <ion-refresher pulling-text="" pulling-icon="none" on-refresh="refresh()" spinner="crescent"></ion-refresher>
+
+                            <ion-item class="item p-item">
+                                
+                                <div class="row">
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper" ng-click="openModal('wall')">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">6</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10338221_10152576853520996_5185319332419852678_n.jpg?oh=1050ca99ab67aecce729b25a462b8393&amp;oe=5623A992&amp;__gda__=1444212935_5bd3e7b096d2e0e3740093c3cadfc9f1" /> 
+                                             <h3 class="p-timeline-name">Erhan</h3>                                                                                  
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">7</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/11540901_10153441484688535_6126204076365582999_n.jpg?oh=38f6fdfdbfe27d687d66756a633a6500&amp;oe=56148787&amp;__gda__=1448187346_83fa117562d0c692359497306733e329" /> 
+                                             <h3 class="p-timeline-name">Kaan</h3> 
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">9</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xat1/v/t1.0-9/11225278_10152997309892582_5347608297812791019_n.jpg?oh=173c35b48fd6306585076048bc56fedc&amp;oe=564EB150&amp;__gda__=1448797842_1196a544c00a3159abf91a002b6f0848" /> 
+                                             <h3 class="p-timeline-name">Kaan</h3> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </ion-item>  
+
+                            <ion-item class="item p-item">
+                                
+                                <div class="row">
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">1</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="http://img.a24.com.tr/hbrResim/Hasan-ve-Turabi-gerilimi-bitmiyor.jpeg" /> 
+                                             <h3 class="p-timeline-name">Musa</h3>                                                                                  
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="double">13</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10430375_936134869779387_6851846980087507547_n.jpg?oh=ec3a0da58395769f1abd7d78f6fa9356&oe=565882D1&__gda__=1443831913_f51f92eb828d1395f92cd9f1377a3425" /> 
+                                             <h3 class="p-timeline-name">Cansu</h3> 
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">6</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/11403076_874761582571127_8374453878493952134_n.jpg?oh=95d52321b65cdd306c5e609a7585d8e5&oe=560EC300&__gda__=1447624113_5542125756bfd1af2860bd2e1fe68e9a" /> 
+                                             <h3 class="p-timeline-name">Sinem</h3> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </ion-item>  
+
+                            <ion-item class="item p-item">
+                                
+                                <div class="row">
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">3</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xft1/v/t1.0-9/11406990_847966728611592_2499528292790602216_n.jpg?oh=2894941296d267268503d9b917009da6&oe=56104241&__gda__=1448309195_6f12c8b3f0fcf508fd8b7090342fe993" /> 
+                                             <h3 class="p-timeline-name">Duygu</h3>                                                                                  
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="double">12</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10345991_10152262218658859_9106223491081518456_n.png?oh=d120c82b8f9b25dc41925c0061821e4a&oe=56436166" /> 
+                                             <h3 class="p-timeline-name">NTV Spor</h3> 
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">2</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11745538_10207073495225556_8269362895590955903_n.jpg?oh=8d10b26933beab4d9699071472532730&oe=56577C00" /> 
+                                             <h3 class="p-timeline-name">Barış</h3> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </ion-item>
+
+                            <ion-item class="item p-item">
+                                
+                                <div class="row">
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">3</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/11174812_825017084246025_780364906602862857_n.png?oh=27a251db4825bba01ee9dd60706b595b&oe=5611E6CA" /> 
+                                             <h3 class="p-timeline-name">CHP</h3>                                                                                  
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="double">29</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10845908_10152871316453427_5790309998244589257_n.jpg?oh=2ab33a66046ba6725f78e8b1424425fc&oe=5643769E" /> 
+                                             <h3 class="p-timeline-name">Dilan</h3> 
+                                        </div>
+                                    </div>
+                                    <div class="col col-33">
+                                        <div class="p-timeline-avatar-wrapper">
+                                            <div class="p-timeline-badge">
+                                                <label class="single">2</label>
+                                             </div>  
+                                             <img class="p-timeline-avatar" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10942583_881241645274237_1649581748216337502_n.jpg?oh=8b2095df2f51a5232e8a766e605fd848&oe=564204AF&__gda__=1447989542_7010ce8de513e5f0176e53522cfda832" /> 
+                                             <h3 class="p-timeline-name">Survivor</h3> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </ion-item>  
+
+                        </ion-list>                                        
+
+                    </ion-content>
+
+                </ion-slide>
+
+                <ion-slide class="p-slide">
+
+                    <ion-content class="p-notifications-content">
+                                
+                            <ion-refresher pulling-text="" pulling-icon="none" on-refresh="refresh()" spinner="crescent"></ion-refresher>
+                                             
+                            <ion-list>                                                    
+
+                                <ion-item class="item item-button-right p-item p-unread">                                    
+                                    <p>Takip ettiğin <b>"Kemal Kılıçdaroğlu gitmeli mi kalmalı mı?"</b> başlıklı anketin sonuçlarına göre, çoğunluk seninle aynı fikirde...</p>
+                                    <button class="button button-clear">
+                                        <i class="icon ion-thumbsup p-color"></i>
+                                    </button>
+                                </ion-item>
+
+                                <ion-item class="item item-button-right p-item p-unread" style="background-color:#FFF9E0;">                                    
+                                    <p>Takip ettiğin <b>"Kemal Kılıçdaroğlu gitmeli mi kalmalı mı?"</b> başlıklı anket az önce sonlandı...</p>
+                                    <button class="button button-clear">
+                                        <i class="icon ion-android-checkmark-circle p-color"></i>
+                                    </button>
+                                </ion-item> 
+
+                                <ion-item class="item item-button-right p-item p-unread" style="background-color:#FFF9E0;">                                    
+                                    <p>Facebook arkadaşın <b>Ekrem Çağrı Köksal</b> da artık pollop'ta...</p>
+                                    <button class="button button-clear">
+                                        <i class="icon ion-social-facebook" style="color:#133783;"></i>
+                                    </button>
+                                </ion-item> 
+
+                                <ion-item class="item item-button-right p-item">                                    
+                                    <p><b>"Türkiye sizce ne kadar hükümetsiz devam edecek?"</b> başlıklı anketin az önce sonlandı...</p>
+                                    <button class="button button-clear">
+                                        <i class="icon ion-android-checkmark-circle"></i>
+                                    </button>
+                                </ion-item>                            
+
+                                <ion-item class="item item-button-right p-item">                                    
+                                    <p><b>Sinem Akyol</b> soruyor. <b>"RedBull kanatlandırır mı?"</b></p>
+                                    <button class="button button-clear">
+                                        <i class="icon ion-person"></i>
+                                    </button>
+                                </ion-item>
+
+                                <ion-item class="item item-button-right p-item">                                    
+                                    <p><b>Duygu Peker</b> arkadaşlık isteğini kabul etti. Hadi <b>Duygu</b>'ya' bir şey sor...</p>
+                                    <button class="button button-clear">
+                                        <i class="icon ion-person-add"></i>
+                                    </button>
+                                </ion-item>  
+
+                                <ion-item class="item item-button-right p-item">                                    
+                                    <p><b>Barış Özkaranfil</b> de artık seni takip ediyor...</p>
+                                    <button class="button button-clear">
+                                        <i class="icon ion-social-rss"></i>
+                                    </button>
+                                </ion-item>                               
+                        
+                            </ion-list>  
+                                                 
+                        </ion-content>
+
+                </ion-slide>
+
+                <ion-slide class="p-slide">
+
+                    <ion-content class="p-search">
+
+                        <div class="row">
+
+                            <div class="col col-80">
+                                
+                                <label class="item item-input">
+                                    <input type="text" placeholder="Anket ID...">
+                                </label>
+
+                            </div>
+                            <div class="col col-20">
+                                
+                                <button class="button p-search-btn">
+                                    Ara
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <ion-list class="p-search-result">
+
+                            <ion-item class="card">
+                            
+                                <ion-item class="item item-avatar item-button-right p-search-item" ng-click="openModal('poll')">
+                                    <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10338221_10152576853520996_5185319332419852678_n.jpg?oh=1050ca99ab67aecce729b25a462b8393&oe=5623A992&__gda__=1444212935_5bd3e7b096d2e0e3740093c3cadfc9f1" />                
+                                    <p>Türkiye sizce hükümetsiz ne kadar devam edecek?</p>
+                                    <button class="button button-clear p-color">
+                                        <i class="icon ion-ios-albums"></i>
+                                    </button>                        
+                                </ion-item> 
+
+                                <ion-item class="item-divider p-search-divider"> 
+                                    <div class="row">
+                                        <div class="col col-50">
+                                            23 <i class="icon ion-person"></i>
+                                        </div>
+                                        <div class="col col-50">
+                                            20 dk. <i class="icon ion-clock"></i>
+                                        </div>                                        
+                                    </div>                          
+                                </ion-item>
+
+                            </ion-item>
+
+                        </ion-list>
+
+                    </ion-content>
+
+                </ion-slide>
+
+            </ion-slide-box>   
+
+        </ion-side-menu-content>
+
+        <ion-side-menu side="left">        
+                     
+            <ion-content>
+
+                <ion-list class="p-profile">
+
+                    <ion-item>
+
+                        <h2>Erhan Emre Eroğlu</h2>
+
+                        <div class="p-avatar-wrapper">
+                            <img class="p-avatar" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10338221_10152576853520996_5185319332419852678_n.jpg?oh=1050ca99ab67aecce729b25a462b8393&amp;oe=5623A992&amp;__gda__=1444212935_5bd3e7b096d2e0e3740093c3cadfc9f1">                                
+                        </div>                    
+
+                    </ion-item>
+
+                    <ion-item class="item-button-right p-backcolor" style="border-top:0px solid #fff;">
+
+                        <h3 class="p-color-white">396 Takipçi</h3>
+
+                        <button class="button button-clear">
+                            <i class="icon ion-ios-gear p-color-white"></i>
+                        </button>
+
+                    </ion-item>
+
+                    <ion-item class="item-button-right">
+
+                        <h3>Devam Eden Anketlerim</h3>
+
+                        <button class="button button-clear">
+                            <i class="icon ion-clock"></i>
+                        </button>
+
+                    </ion-item>
+
+                    <ion-item class="item-button-right">
+
+                        <h3>Sonuçlanmış Anketlerim</h3>
+
+                        <button class="button button-clear">
+                            <i class="icon ion-checkmark-round"></i>
+                        </button>
+
+                    </ion-item>
+
+                    <ion-item class="item-button-right">
+
+                        <h3>Hakkımızda</h3>
+
+                        <button class="button button-clear">
+                            <i class="icon ion-earth"></i>
+                        </button>
+
+                    </ion-item>
+
+                    <ion-item class="item-button-right">
+
+                        <h3>Destek</h3>
+
+                        <button class="button button-clear">
+                            <i class="icon ion-compose"></i>
+                        </button>
+
+                    </ion-item>                                
+
+                </ion-list>
+
+            </ion-content>
+
+        </ion-side-menu> 
+
+    </ion-side-menus>
+
+</ion-view>
+
+
+<style type="text/css">
+
+.p-color-white
+{
+    color:#ffffff !important;
+}
+
+.p-color
+{
+    color:#F96D2B !important;
+}
+
+.p-backcolor
+{
+    background-color:#F96D2B;
+}
+
+.p-backcolor-2
+{
+    background-color:rgba(253, 191, 162, 0.25) !important; 
+}
+
+.p-unread
+{
+    background-color:#FFF9E0;
+}
+
+.p-header-bar
+{
+    background-color: #F96D2B !important;
+}
+
+.p-icon-bar
+{
+    padding: 0;
+    height: 55px;
+}
+
+.p-icon-bar-row
+{
+    height: 100%;
+    padding: 0;    
+}
+
+.p-icon-bar-col
+{
+    text-align: center;    
+    background-color:rgba(253, 191, 162, 0.25) !important;    
+    border-bottom: 2px solid rgba(253, 191, 162, 0.25);
+    padding-top: 15px;    
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms; 
+}
+
+.p-icon-bar-col.active
+{    
+    border-bottom: 2px solid #F96D2B;
+    padding-top: 8px;
+    margin-top: 0px;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms; 
+}
+
+.p-icon-bar-col i
+{
+    font-size:2em;
+    color: #FFB794;     
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms; 
+}
+
+.p-icon-bar-col.active  i
+{
+    font-size:2.5em; 
+    color: #F96D2B;      
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms; 
+}
+
+.p-icon-bar-col:last-child
+{    
+    border-right: 0px solid #fff;    
+}
+
+.p-slider
+{
+    height: 100%;
+    top:99px;
+}
+
+.p-slide
+{
+    height: 100%;
+}
+
+.p-discover
+{
+    top:0px;
+}
+
+.p-search
+{
+    top:0px;
+}
+
+.p-discover .row
+{
+    padding: 0;
+}
+
+.p-discover .row .col
+{
+    padding: 0;
+}
+
+.p-discover .p-item
+{
+    padding: 0;
+    border:none;
+}
+
+.p-discover .p-item .row
+{
+    padding: 0;    
+}
+
+.p-discover .p-item .col
+{
+    padding: 0;    
+}
+
+.p-discover .card
+{
+    padding: 0px !important;
+    border:none;
+    box-shadow: none;
+    margin: 1px;
+}
+
+.p-discover .card img
+{
+    width: 100%;    
+    opacity: 0.8;
+}
+
+.p-discover .card h2
+{
+    text-align: right;
+    position: absolute;
+    bottom: 2px;
+    padding-right: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding-top: 85%;
+    color: #fff; 
+}
+
+.p-discover .card i
+{
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+    font-size: 45px;
+    color: #fff;
+}
+
+.p-timeline-content
+{
+    top:0px;    
+    position: relative;
+    height: 100%;
+}
+
+.p-timeline-content .p-item
+{    
+    height: 130px;
+    border: none;
+}
+
+.p-timeline-content .p-item .col-33
+{    
+    padding-left: 7%;
+}
+
+.p-timeline-avatar-wrapper
+{
+    background-color: #F96D2B;
+    width: 70px;    
+    height: 70px;
+    border-radius: 50%;
+}
+
+.p-timeline-avatar
+{
+    width: 90%;
+    margin-left: 5.5%;
+    margin-top: -26px;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+
+.p-timeline-name
+{
+    text-align: center;
+    padding-top: 10px;    
+}
+
+.p-timeline-badge
+{    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F96D2B;
+    color: white;
+    text-align: center;
+    margin-left: -15%; 
+}
+
+.p-timeline-badge label.double
+{
+    position: absolute;
+    margin-left: -2.5%;
+    margin-top: 3px;
+    font-size:13px;
+}
+
+.p-timeline-badge label.single
+{
+ position: absolute;
+    margin-left: -1.7%;
+    margin-top: 3px;
+    font-size:13px;   
+}
+
+.p-notifications-content
+{
+    top:0px;
+}
+
+.p-notifications-content .p-item p
+{
+    white-space: normal;
+}
+
+.p-notifications-content .p-item .icon:before
+{
+    font-size: 180%;
+    margin-top: 15%;
+}
+
+.p-messages-content
+{
+    top:0px;
+}
+
+.p-messages-content .p-item h2
+{
+    font-size: 14px;    
+}
+
+.p-messages-content .p-item .icon:before
+{
+    font-size: 180%;
+    margin-top: 15%;
+}
+
+.scroll-refresher
+{
+    background-color: #fff; 
+    color:#fff; 
+    height: 40px;
+    top: -40px;
+}
+
+.scroll-refresher .ionic-refresher-content
+{
+    bottom:6px;
+}
+
+.scroll-content
+{
+    background-color: #fff; 
+}
+
+.spinner-crescent
+{
+    stroke: #F96D2B;
+    fill:#F96D2B;
+}
+
+.icon-pulling .icon
+{
+    color:#fff;
+}
+
+.bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before
+{
+    font-size: 22px;
+}
+
+.menu
+{
+    background-color: rgba(253, 191, 162, 0.25) !important;
+}
+
+.p-avatar
+{
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 4px;
+    border-radius: 50%;
+}
+
+.p-avatar-wrapper
+{
+    background-color: #fff;
+    width: 54%;
+    margin-left: 23%;
+    border-radius: 50%;
+}
+
+.p-profile
+{
+    background-color: rgba(253, 191, 162, 0.25) !important;
+}
+
+.p-profile .item:first-child
+{
+    background-color: #F96D2B;  
+    padding: 10px;  
+}
+
+.p-profile .item:first-child h2
+{
+    color: #fff;
+    line-height: 30px;
+    text-align: center;    
+    margin-bottom: 25px;
+}
+
+.p-profile .item:first-child .col
+{
+    text-align: center;
+    padding: 0px;
+}
+
+.p-profile .item:first-child .col .icon
+{
+    color:#ffffff;    
+}
+
+.p-profile .item:first-child .col .icon:before
+{
+    font-size:30px;
+}
+
+.p-search label
+{
+    padding: 0;
+    padding-left: 5px;
+}
+
+.p-search-btn
+{
+    margin-top: 0px;
+    padding: 0 10px;
+    font-size: 14px;
+    border:none;
+    background-color: #F96D2B;
+    color:#fff;
+    min-height: 35px;
+    line-height: 35px;
+}
+
+.p-search-result .card
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin:10px 10px;
+}
+
+.p-search-result .first-button
+{    
+    color:#F96D2B;
+}
+
+.p-search-result .second-button
+{
+    left: 3%;
+    color:#F96D2B;
+}
+
+.p-search-result p
+{
+    white-space: normal;
+}
+
+.p-search-item
+{
+    border:none;
+}
+
+.p-search-item i:before
+{
+    font-size: 30px!important;
+    top: 12px;
+}
+
+.p-search-divider
+{
+    background-color: rgba(253, 191, 162, 0.25);
+    border:none;   
+    min-height: 40px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.p-search-divider .col
+{
+    color:#6A6A6A;
+    text-align: center;
+    font-size: 13px;
+}
+
+.p-search-divider .col i:before
+{
+    color:#F96D2B;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 2%;
+}
+
+.p-options
+{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    bottom: 0;
+    z-index: 2;
+    background-color: #FFDECD;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;  
+}
+
+.p-options.hidden
+{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    z-index: 2;
+    background-color: #FFDECD;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;  
+}
+
+.p-options .row
+{
+    padding: 0;
+}
+
+.p-options .col-20
+{
+    color: #F96D2B;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.p-options .col-20.selected
+{
+    color: #F96D2B;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
+    border-top:2px solid #F96D2B;
+}
+
+.p-new
+{
+    position: absolute;
+    right: -55px;
+    bottom: -55px;
+    background-color: rgb(249, 109, 43);
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    border-radius: 50%;
+        border: 2px solid white;
+}
+
+.p-new-left
+{
+    position: absolute;
+    left: -55px;
+    bottom: -55px;
+    background-color: rgb(249, 109, 43);
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    border-radius: 50%;
+        border: 2px solid white;
+}
+
+.p-new i
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    top: 15px;
+    position: absolute;    
+}
+
+.p-new-left i
+{
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    left: 62px;
+    top: 15px;
+    position: absolute;
+}
+
+</style>

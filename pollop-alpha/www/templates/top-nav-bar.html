@@ -1,0 +1,11 @@
+<ctrl ng-controller="NavCtrl">
+
+	<div class="p-nav-bar p-background-color">
+
+		<div class="p-nav-bar-item p-col p-five {{navItems[item.index]}}" ng-click="toggle_navItem(item.index)" ng-repeat="item in navIcons">
+			<i class="icon p-color-light {{item.icon}}"></i>
+		</div>					
+
+	</div>
+
+</ctrl>

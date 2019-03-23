@@ -1,0 +1,5 @@
+C:\Users\Erhan Emre Eroğlu\Dropbox\Chiqqou\Projects\Ionic Projects\Pollop\beta.pollopapp.com\bin\beta.pollopapp.com.dll
+C:\Users\Erhan Emre Eroğlu\Dropbox\Chiqqou\Projects\Ionic Projects\Pollop\beta.pollopapp.com\bin\beta.pollopapp.com.pdb
+C:\Users\Erhan Emre Eroğlu\Dropbox\Chiqqou\Projects\Ionic Projects\Pollop\beta.pollopapp.com\obj\Debug\beta.pollopapp.com.csprojResolveAssemblyReference.cache
+C:\Users\Erhan Emre Eroğlu\Dropbox\Chiqqou\Projects\Ionic Projects\Pollop\beta.pollopapp.com\obj\Debug\beta.pollopapp.com.dll
+C:\Users\Erhan Emre Eroğlu\Dropbox\Chiqqou\Projects\Ionic Projects\Pollop\beta.pollopapp.com\obj\Debug\beta.pollopapp.com.pdb

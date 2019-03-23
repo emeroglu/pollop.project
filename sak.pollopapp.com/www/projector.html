@@ -1,0 +1,98 @@
+<html>
+
+	<head>
+		<title>Pollop | Projector</title>
+
+		<link href="/Template/lib/ionic/css/ionic.css" rel="stylesheet">
+ 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="/Template/css/projector.css" rel="stylesheet">
+
+		<script src="/Template/lib/ionic/js/ionic.bundle.js"></script>  
+		<script type="text/javascript">
+
+		var app = angular.module("projector",['ionic']);
+
+		app.controller("AppCtrl",function($scope,$timeout,$http){
+
+			$http.get("/Polls/2").success(function (data) {
+				
+				$scope.polls = data;
+
+				$scope.index = -1;
+
+				$scope.tick();
+
+			});
+
+			$scope.tick = function(){
+
+				$scope.index++;
+
+				$scope.poll = $scope.polls[$scope.index];
+
+				$timeout(function(){
+
+					$scope.tick();
+
+				},5000);
+
+			};
+
+		});
+
+		</script>    
+
+	</head>
+	<body ng-app="projector" ng-controller="AppCtrl">
+		
+		<iframe src="https://www.youtube.com/embed/c1LtTozW4iA" frameborder="0" allowfullscreen></iframe>
+
+		<feed>
+			
+			<logo>
+				<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/s960x960/11882259_903612799720550_8803068947831451790_o.png" />
+			</logo>
+
+			<poll>
+				<question>
+					<avatar>
+						<img src="{{poll.avatar}}" />
+					</avatar>
+					<name>{{poll.title}}</name>
+					<text>{{poll.question}}</text>
+					<footer>
+						<attendance>
+							<icon>
+								<i class="icon ion-ios-people"></i>
+							</icon>
+							<stat>{{poll.attendance}} kişi</stat>
+						</attendance>
+						<remaining>
+							<icon>
+								<i class="icon ion-clock"></i>
+							</icon>
+							<stat>{{poll.remaining}} dk</stat>
+						</remaining>
+					</footer>
+				</question>
+				<stats>
+					<choice ng-repeat="choice in poll.choices">
+						<text style="font-size: 1vw;line-height: 6.5vh;">{{choice.text}}</text>
+						<bar style="width: 52%;"></bar>
+						<percentage>52%</percentage>
+					</choice>					
+				</stats>
+			</poll>
+
+			<footer>
+				<icon>
+					<i class="icon ion-earth"></i>
+				</icon>
+				<text class="p-font">sak.pollopapp.com</text>
+			</footer>
+
+		</feed>
+
+	</body>
+
+</html>

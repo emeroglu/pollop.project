@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title>Pollop | SAK</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>  
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-app="pollop" ng-controller="AppCtrl">
+
+    <header class="p-background-color">
+      <logo>
+        <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/s960x960/11882259_903612799720550_8803068947831451790_o.png" />
+      </logo>
+      <header-title></header-title>
+    </header>
+    
+    <ion-content style="position: absolute;width: 100%;height: calc(100% - 25px);">
+      <wall>
+        <wall-item ng-repeat="item in items" ng-click="open(item.id)" class="{{item.end}}">
+          <content>
+            <avatar>
+              <img src="{{item.avatar}}" />
+            </avatar>
+            <text>
+              <name class="p-font">
+                {{item.title}}<asks class="p-font p-color-grey"> soruyor:</asks>
+              </name>
+              <question class="p-font p-color-grey">
+               {{item.question}}
+              </question>
+            </text>
+          </content>
+          <footer>
+            <attendance>
+              <icon>
+                <i class="icon ion-ios-people p-color"></i>
+              </icon>
+              <text class="p-font p-color-grey">{{item.attendance}} kişi</text>
+            </attendance>
+            <remaining>
+              <icon>
+                <i class="icon ion-clock p-color"></i>
+              </icon>
+              <text class="p-font p-color-grey">{{item.remaining}} dk.</text>
+            </remaining>            
+          </footer>
+        </wall-item>
+      </wall>
+    </ion-content>
+
+    <poll class="{{views.poll}}">
+      <content>
+        <avatar>
+          <img src="{{poll.avatar}}" />
+        </avatar>
+        <text>
+          <name class="p-font">
+            {{poll.title}}<asks class="p-font p-color-grey"> soruyor:</asks>
+          </name>
+          <question class="p-font p-color-grey">
+           {{poll.question}}
+          </question>
+        </text>
+      </content>
+      <footer>
+        <attendance>
+          <icon>
+            <i class="icon ion-ios-people p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.attendance}} kişi</text>
+        </attendance>
+        <remaining>
+          <icon>
+            <i class="icon ion-clock p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.remaining}} dk.</text>
+        </remaining>
+      </footer>
+      <ion-content style="position: absolute;width: 100%;height: calc(100% - 200px);top: 150px;">
+        <choices>
+          <choice ng-repeat="choice in poll.choices" ng-click="choose(choice.index)" class="{{choice.state}}">
+            <text class="p-font">{{choice.text}}</text>           
+          </choice>
+        </choices>
+      </ion-content>
+      <bottom-bar class="p-background-color p-font" ng-click="close()">Geri Dön</bottom-bar>      
+    </poll>
+
+    <poll-images class="{{views.pollImages}}">
+      <content>
+        <avatar>
+          <img src="{{poll.avatar}}" />
+        </avatar>
+        <text>
+          <name class="p-font">
+            {{poll.title}}<asks class="p-font p-color-grey"> soruyor:</asks>
+          </name>
+          <question class="p-font p-color-grey">
+           {{poll.question}}
+          </question>
+        </text>
+      </content>
+      <footer>
+        <attendance>
+          <icon>
+            <i class="icon ion-ios-people p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.attendance}} kişi</text>
+        </attendance>
+        <remaining>
+          <icon>
+            <i class="icon ion-clock p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.remaining}} dk.</text>
+        </remaining>
+      </footer>
+      <ion-content style="position: absolute;width: 100%;height: calc(100% - 200px);top: 150px;">
+        <choices>
+          <choice ng-repeat="choice in poll.choices">
+            <photo>
+              <img src="{{choice.image}}" ng-click="view(choice.index)" />
+            </photo>
+            <choice-text class="{{choice.state}}">
+              <text class="p-font" ng-click="choose(choice.index)">{{choice.text}}</text>              
+            </choice-text>
+          </choice>
+        </choices>
+      </ion-content>
+      <view class="{{views.view}}">
+        <mask ng-click="closeView()"></mask>
+        <photo>
+          <img src="{{image}}" />
+        </photo>
+        <choose class="p-background-color" ng-click="choose(choice.index)">{{choice.text}}</choose>
+      </view>
+      <bottom-bar class="p-background-color p-font" ng-click="close()">Geri Dön</bottom-bar>      
+    </poll-images>
+
+    <poll-title class="{{views.pollTitle}}">
+      <content>
+        <avatar>
+          <img src="{{poll.avatar}}" />
+        </avatar>
+        <text>
+          <name class="p-font">
+            {{poll.title}}<asks class="p-font p-color-grey"> soruyor:</asks>
+          </name>
+          <question class="p-font p-color-grey">
+           {{poll.question}}
+          </question>
+        </text>
+      </content>
+      <footer>
+        <attendance>
+          <icon>
+            <i class="icon ion-ios-people p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.attendance}} kişi</text>
+        </attendance>
+        <remaining>
+          <icon>
+            <i class="icon ion-clock p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.remaining}} dk.</text>
+        </remaining>
+      </footer>
+      <ion-content style="position: absolute;width: 100%;height: calc(100% - 200px);top: 150px;">
+        <choices>
+          <choice ng-repeat="choice in poll.choices" ng-click="choose(choice.index)" class="{{choice.state}}">
+            <photo>
+              <img src="{{choice.image}}" />
+            </photo>
+            <choice-title class="p-font">{{choice.title}}</choice-title>
+            <text class="p-font">{{choice.text}}</text>            
+          </choice>
+        </choices>
+      </ion-content>
+      <bottom-bar class="p-background-color p-font" ng-click="close()">Geri Dön</bottom-bar>      
+    </poll-title>
+
+    <message-box class="p-font p-color {{views.messageBox}}">{{message}}</message-box>
+
+    <splash class="p-background-color {{views.splash}}">
+
+      <logo class="{{views.splashLogo}}">
+        <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/s960x960/11882259_903612799720550_8803068947831451790_o.png" />
+      </logo>
+
+      <facebook ng-click="tryLogin()" class="{{views.facebook}}">
+        <logo>
+          <img src="https://www.facebook.com/images/fb_icon_325x325.png" />
+        </logo>
+        <text class="p-font">Facebook ile bağlan</text>
+      </facebook>
+
+    </splash>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@media
+	(width: 768px) and (height:1024px) and (orientation:portrait),
+	(width: 601px) and (height:962px) and (orientation:portrait),
+	(width: 800px) and (height:1280px) and (orientation:portrait),
+	(width: 602px) and (height:962px) and (orientation:portrait),
+	(width: 600px) and (height:1024px) and (orientation:portrait),
+	(width: 400px) and (height:683px) and (orientation:portrait),
+	(width: 720px) and (height:1280px) and (orientation:portrait),
+	(width: 768px) and (height:1366px) and (orientation:portrait)
+{
+	
+}

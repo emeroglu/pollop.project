@@ -1,0 +1,12 @@
+@media	
+	(width: 736px) and (min-height: 314px) and (max-height:414px) and (orientation:landscape),
+	(width: 667px) and (min-height: 265px) and (max-height:365px) and (orientation:landscape),
+	(width: 568px) and (min-height: 220px) and (max-height:320px) and (orientation:landscape),
+	(width: 480px) and (min-height: 220px) and (max-height:320px) and (orientation:landscape),
+	(width: 640px) and (min-height: 260px) and (max-height:360px) and (orientation:landscape),
+	(width: 640px) and (min-height: 300px) and (max-height:400px) and (orientation:landscape),
+	(width: 533px) and (min-height: 220px) and (max-height:320px) and (orientation:landscape),
+	(width: 480px) and (min-height: 220px) and (max-height:320px) and (orientation:landscape)
+{
+
+}

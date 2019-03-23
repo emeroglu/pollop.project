@@ -1,0 +1,36 @@
+<ctrl ng-controller="SideBallCtrl">
+
+	<div class="p-side-ball p-left-side-ball p-background-color p-border-color-white p-border-circle {{sh_SideBalls}}" ng-click="open_settings();">
+		<i class="icon ion-gear-a p-color-light"></i>
+	</div>
+
+	<div class="p-side-ball p-right-side-ball p-background-color p-border-color-white p-border-circle {{sh_SideBalls}}" ng-click="toggle_newPoll()">
+		<i class="icon ion-edit p-color-light"></i>
+	</div>
+
+	<div class="p-new-poll p-new-multiple-choice p-background-color p-border-color-white p-border-circle {{sh_multipleChoice}}">				
+		<h2 class="p-color-white">Çoktan Seçmeli</h2>
+		<i class="icon ion-help p-color-white"></i>
+	</div>
+
+	<div class="p-new-poll p-new-combination p-background-color p-border-color-white p-border-circle {{sh_combination}}">
+		<h2 class="p-color-white">Kombinleme</h2>
+		<i class="icon ion-ios-keypad p-color-white"></i>
+	</div>
+
+	<div class="p-new-poll p-new-yes-no p-background-color p-border-color-white p-border-circle {{sh_yesNo}}">
+		<h2 class="p-color-white">Evet / Hayır</h2>
+		<i class="icon ion-checkmark-round p-color-white"></i>
+	</div>
+
+	<div class="p-new-poll p-new-score p-background-color p-border-color-white p-border-circle {{sh_score}}">
+		<h2 class="p-color-white">Puanlama</h2>
+		<i class="icon ion-stats-bars p-color-white"></i>
+	</div>
+
+	<div class="p-new-poll p-new-order p-background-color p-border-color-white p-border-circle {{sh_order}}">					
+		<h2 class="p-color-white">Sıralama</h2>
+		<i class="icon ion-ios-albums p-color-white"></i>
+	</div>
+
+</ctrl>

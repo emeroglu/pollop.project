@@ -1,0 +1,103 @@
+/* iPad Air 2 */
+/* iPad Air */
+/* iPad 4 */
+/* iPad 3 */
+/* iPad 2 */
+/* iPad */
+/* iPad Mini 3 */
+/* iPad Mini 2 */
+/* iPad Mini */
+@media (width: 768px) and (height:1024px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 1024px) and (height:768px) and (orientation:landscape)
+{
+	
+}
+
+/* Samsung Galaxy Note 8.0 */
+@media (width: 601px) and (height:962px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 962px) and (height:601px) and (orientation:landscape)
+{
+	
+}
+
+/* Samsung Galaxy Note 10.0 */
+/* Samsung Galaxy Tab 10.1 */
+/* Samsung Galaxy Tab 8.9 - 4G */
+/* Samsung Galaxy Tab 8.9 */
+/* Samsung Galaxy Tab 7.7 */
+/* Samsung Galaxy Tab 3 - 10.1 */
+/* Samsung Galaxy Tab 2 - 10.1 */
+@media (width: 800px) and (height:1280px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 1280px) and (height:800px) and (orientation:landscape)
+{
+	
+}
+
+/* Samsung Galaxy Tab 3 - 8.0 */
+@media (width: 602px) and (height:962px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 962px) and (height:602px) and (orientation:landscape)
+{
+	
+}
+
+/* Samsung Galaxy Tab 3 - Kids */
+/* Samsung Galaxy Tab 3 - 7.0 */
+/* Samsung Galaxy Tab 2 - 7.0 */
+@media (width: 600px) and (height:1024px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 1024px) and (height:600px) and (orientation:landscape)
+{
+	
+}
+
+/* Samsung Galaxy Tab */
+@media (width: 400px) and (height:683px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 683px) and (height:400px) and (orientation:landscape)
+{
+	
+}
+
+/* Microsoft Surface Pro */
+@media (width: 720px) and (height:1280px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 1280px) and (height:720px) and (orientation:landscape)
+{
+	
+}
+
+/* Microsoft Surface */
+@media (width: 768px) and (height:1366px) and (orientation:portrait)
+{
+	
+}
+
+@media (width: 1366px) and (height:768px) and (orientation:landscape)
+{
+	
+}

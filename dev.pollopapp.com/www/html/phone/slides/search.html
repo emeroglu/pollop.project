@@ -1,0 +1,73 @@
+<ctrl ng-controller="SearchCtrl">
+
+	<view>
+
+		<row>
+
+			<column class="col-1-1">
+				<textarea class="p-color-3 p-border-color-2" rows="1" ng-model="searchText" ng-change="search()" ng-focus="clear()" ng-blur="reset()"></textarea>
+			</column>			
+
+		</row>
+
+		<results>
+
+			<user ng-repeat="user in users">
+			
+				<row class="p-background-color-{{user.background}}">
+
+					<column class="col-1-3">
+						<avatar>
+							<img src="{{user.avatar}}" />
+						</avatar>
+					</column>
+					<column class="col-2-3">
+						<name class="p-color-3">{{user.name}}</name>
+						<row>
+							<column class="col-1-2">
+								<followers class="p-color-3">{{user.followers}} Takipçi</followers>
+							</column>
+							<column class="col-1-2">
+								<poll-count class="p-border-left-color p-color-3">{{user.pollCount}} Anket</poll-count>
+							</column>														
+						</row>
+					</column>
+
+				</row>
+
+			</user>		
+			
+			<poll>
+				
+			</poll>
+			
+			<page ng-repeat="page in pages">
+				
+				<row class="p-background-color-{{page.background}}">
+
+					<column class="col-1-3">
+						<avatar>
+							<img src="{{page.avatar}}" />
+						</avatar>
+					</column>
+					<column class="col-2-3">
+						<name class="p-color-3">{{page.name}}</name>
+						<row>
+							<column class="col-1-2">
+								<followers class="p-color-3">{{page.followers}} Takipçi</followers>
+							</column>
+							<column class="col-1-2">
+								<poll-count class="p-border-left-color p-color-3">{{page.pollCount}} Anket</poll-count>
+							</column>														
+						</row>
+					</column>
+
+				</row>
+
+			</page>
+
+		</results>
+
+	</view>
+
+</ctrl>

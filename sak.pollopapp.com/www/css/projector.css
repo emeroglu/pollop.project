@@ -1,0 +1,256 @@
+.p-font {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+iframe {
+	width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+feed {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	right: 0px;
+	top:0px;
+	opacity: 0.8;
+	background-color: #F96D2B;
+}
+
+logo
+{
+	position: absolute;
+	width: 7vw;
+	height: 7vw;
+	top: 1vw;
+	right: 6.5vw;	
+}
+
+logo img
+{
+	position: absolute;
+	width: 100%;
+}
+
+poll
+{
+	position: absolute;
+	width: 20vw;
+	height: calc(90vh - 9vw);
+	top: 9vw;
+	padding: 5%;
+	background-color: #fff;
+}
+
+poll question
+{
+    position: absolute;
+    width: 90%;
+    height: 20vh;
+    left: 5%;		
+}
+
+poll question avatar
+{
+    position: absolute;
+    width: 20%;
+    height: 10vh;	
+}
+
+poll question avatar img
+{
+    position: absolute;
+    width: 90%;
+    top: 15%;
+    left: 5%;
+    border-radius: 50%;
+}
+
+poll question name
+{
+	position: absolute;
+    width: 70%;
+    height: 4vh;
+    left: 25%;
+    font-weight: 800;
+    line-height: 4vh;	
+}
+
+poll question text
+{
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 6vh;
+    top: 4vh;
+    left: 25%;
+    font-size: 1vw;
+    line-height: 2vh;	
+}
+
+poll question footer
+{
+	position: absolute;
+	width: 100%;
+	height: 7vh;
+	top: 10vh;
+    border-top: 2px solid #F96D2B;
+    border-bottom: 2px solid #F96D2B;	
+}
+
+poll question footer attendance
+{
+	position: absolute;
+	width: 50%;
+	height: 7vh;		
+}
+
+poll question footer remaining
+{
+	position: absolute;
+	width: 50%;
+	height: 7vh;
+	left: 50%;		
+}
+
+poll question footer attendance icon
+{
+	position: absolute;
+	width: 40%;
+	height: 7vh;
+	text-align: right;
+	font-size: 2vw;		
+}
+
+poll question footer attendance icon i:before
+{
+	line-height: 6.5vh !important;
+	color: #F96D2B;
+}
+
+poll question footer attendance stat
+{
+	position: absolute;
+	width: 60%;
+	height: 7vh;
+	left: 40%;
+	text-align: center;
+	font-size: 1.2vw;
+	line-height: 6.5vh;
+}
+
+poll question footer remaining icon
+{
+	position: absolute;
+	width: 40%;
+	height: 7vh;
+	text-align: center;
+	font-size: 1.8vw;		
+}
+
+poll question footer remaining icon i:before
+{
+	line-height: 6.5vh !important;
+	color: #F96D2B;
+}
+
+poll question footer remaining stat
+{
+	position: absolute;
+	width: 60%;
+	height: 7vh;
+	left: 40%;
+	text-align: left;
+	font-size: 1.2vw;
+	line-height: 6.5vh;
+}
+
+poll stats
+{
+	position: absolute;
+	width: 90%;
+	height: 50vh;
+	left:5%;
+	top: 20vh;	
+}
+
+poll stats choice
+{
+	position: relative;
+	float: left;
+	width: 90%;
+	height: 7vh;
+	left: 5%;
+	margin-top: 4vh;
+	border-top: 2px solid #F96D2B;
+    border-bottom: 2px solid #F96D2B;	
+}
+
+poll stats choice bar
+{
+	position: absolute;	
+	height: calc(7vh - 4px);
+	opacity: 0.2;
+	background-color: #F96D2B;
+}
+
+poll stats choice text
+{
+	position: absolute;
+	width: 70%;
+	height: 7vh;
+	left: 5%;
+	text-align: left;
+	font-weight: 400;
+}
+
+poll stats choice percentage
+{	
+	position: absolute;
+	width: 35%;
+	height: 7vh;
+	right: 5%;	
+	text-align: right;
+	font-size: 1.2vw;
+	line-height: 6.5vh;
+}
+
+footer
+{
+	position: absolute;
+	width: 20vw;
+	height: 10vh;
+	bottom:0px;	
+}
+
+footer icon
+{
+	position: absolute;
+	width: 3.5vw;
+	height: 10vh;
+	bottom: 0px;
+	text-align: right;
+	font-size: 3vw;		
+}
+
+footer icon i:before
+{
+	line-height: 10vh !important;
+	color:#fff;
+}
+
+footer text
+{
+	position: absolute;
+	width: 15vw;
+	height: 10vh;
+	bottom:0px;
+	right: 1vw;
+	color:#fff;
+	text-align: center;
+	line-height: 10vh;
+	font-size: 1.7vw;
+}

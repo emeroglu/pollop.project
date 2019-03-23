@@ -1,0 +1,53 @@
+<ctrl ng-controller="SliderCtrl">
+
+	<view class="p-z-100" detect-gestures>
+
+		<ion-slide-box active-slide="indexSlider" on-slide-changed="onSlideChanged($index)" show-pager="false">
+
+			<ion-slide>
+
+				<settings></settings>
+
+			</ion-slide>
+
+			<ion-slide>
+			
+				<discover></discover>
+
+			</ion-slide>
+
+			<ion-slide>
+
+				<private-polls></private-polls>
+
+			</ion-slide>
+			
+			<ion-slide>
+												
+				<landing></landing>								
+
+			</ion-slide>
+
+			<ion-slide>
+
+				<notifications></notifications>
+
+			</ion-slide>
+
+			<ion-slide>
+
+				<search></search>
+
+			</ion-slide>
+
+			<ion-slide>
+
+				<create></create>
+
+			</ion-slide>
+
+		</ion-slide-box>
+
+	</view>
+
+</ctrl>

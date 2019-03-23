@@ -1,0 +1,41 @@
+<ctrl ng-controller="RightOptionsCtrl">
+
+    <view class="p-background-color-2 {{stateRightOptions}}">
+
+        <square ng-click="changeToOrder()">
+            <icon>
+                <i class="icon ion-ios-albums p-color"></i>
+            </icon>
+            <separator class="p-background-color"></separator>
+        </square>
+
+        <square ng-click="changeToScore()">
+            <icon>
+                <i class="icon ion-stats-bars p-color"></i>
+            </icon>
+            <separator class="p-background-color"></separator>
+        </square>
+
+        <square ng-click="changeToYesNo()">
+            <icon>
+                <i class="icon ion-checkmark-round p-color"></i>
+            </icon>
+            <separator class="p-background-color"></separator>
+        </square>
+
+        <square ng-click="changeToSelection()">
+            <icon>
+                <i class="icon ion-ios-keypad p-color"></i>
+            </icon>
+            <separator class="p-background-color"></separator>
+        </square>
+
+        <square ng-click="changeToMultiple()">
+            <icon>
+                <i class="icon ion-help p-color"></i>
+            </icon>
+        </square>
+
+    </view>
+
+</ctrl>

@@ -1,0 +1,331 @@
+splash view.p-show
+{
+    opacity: 1;     
+}
+
+splash view.p-hide
+{
+    opacity: 0;
+    -webkit-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+mask view.p-show {
+    opacity: 1;
+}
+
+mask view.p-hide {
+    opacity: 0;
+}
+
+indicator view.p-state-1 {
+    left: 0%;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+indicator view.p-state-2 {
+    left: 20%;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+indicator view.p-state-3 {
+    left: 40%;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+indicator view.p-state-4 {
+    left: 60%;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+indicator view.p-state-5 {
+    left: 80%;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+success view.p-show
+{
+    top:0px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+success view.p-hide
+{
+    top:-50px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+failure view.p-show
+{
+    top:0px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+failure view.p-hide
+{
+    top:-50px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+info view.p-show
+{
+    top:0px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+info view.p-hide
+{
+    top:-50px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+warning view.p-show
+{
+    top:0px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+warning view.p-hide
+{
+    top:-50px;
+    -webkit-transition: all 500ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+left-options view.p-show {
+    left: 0px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+left-options view.p-hide {
+    left: -60px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+right-options view.p-show {
+    right: 0px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+right-options view.p-hide {
+    right: -60px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+left-button view.p-show {
+    bottom: -3px;
+    left: -3px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+left-button view.p-hide {
+    bottom: -53px;
+    left: -53px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+right-button view.p-show {
+    bottom: -3px;
+    right: -3px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+right-button view.p-hide {
+    bottom: -50px;
+    right: -50px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+options view.p-show {
+    bottom: 0px;
+    -webkit-transition: all 300ms cubic-bezier(0,1,0.5,1);
+    -moz-transition: all 300ms cubic-bezier(0,1,0.5,1);
+    -o-transition: all 300ms cubic-bezier(0,1,0.5,1);
+    -ms-transition: all 300ms cubic-bezier(0,1,0.5,1);
+}
+
+options view.p-hide {
+    bottom: -50px;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+options-indicator.p-state-1 {
+    margin-left: 20%;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+options-indicator.p-state-2 {
+    margin-left: 40%;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+options-indicator.p-state-3 {
+    margin-left: 60%;
+    -webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+/* ------------------------------------ */
+
+first-dialog view.p-show
+{	
+	bottom: 0%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+first-dialog view.p-hide
+{	
+	bottom: -40%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-list view.p-show
+{	
+	bottom: 0%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+poll-list view.p-hide
+{	
+	bottom: -100%;
+	-webkit-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 300ms cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+landing view whole.p-show {
+    opacity: 1;
+    -webkit-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+landing view whole.p-hide {
+    opacity: 0;
+    -webkit-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+landing view whole:nth-child(2).p-refreshed {
+    margin-top: -27.5%;
+    -webkit-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+landing view whole:nth-child(2).p-refreshing {
+    margin-top: -27.5%;
+    -webkit-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 2s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+landing view whole:nth-child(2) partition.part-3.part-1-3 content img.p-small {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 37.5%;
+    -webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}
+
+landing view whole:nth-child(2) partition.part-3.part-1-3 content img.p-big {
+    width: 200%;
+    margin-left: -50%;
+    margin-top: 50%;
+    -webkit-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -moz-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -o-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+    -ms-transition: all 1s cubic-bezier(0.3, 0.6, 0.5, 0.9);
+}

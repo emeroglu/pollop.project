@@ -1,0 +1,50 @@
+<ctrl ng-controller="PollListCtrl">
+
+	<view class="{{statePollListPage}}">
+		
+		<header class="p-background-color">
+	      <logo>
+	        <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/s960x960/11882259_903612799720550_8803068947831451790_o.png" />
+	      </logo>
+	      <close ng-click="close()">
+	      	<i class="icon ion-close-round"></i>
+	      </close>	      
+	    </header>
+
+	    <ion-content style="position: absolute;width: 100%;height: calc(100% - 25px);">
+	      <wall>
+	        <wall-item ng-repeat="item in items" ng-click="open(item)" class="{{item.end}}">
+	          <content>
+	            <avatar>
+	              <img src="{{item.avatar}}" />
+	            </avatar>
+	            <text>
+	              <name class="p-font">
+	                {{item.title}}<asks class="p-font p-color-grey"> asks:</asks>
+	              </name>
+	              <question class="p-font p-color-grey">
+	               {{item.question}}
+	              </question>
+	            </text>
+	          </content>
+	          <footer>
+	            <attendance>
+	              <icon>
+	                <i class="icon ion-ios-people p-color"></i>
+	              </icon>
+	              <text class="p-font p-color-grey">{{item.attendance}} answered</text>
+	            </attendance>
+	            <remaining>
+	              <icon>
+	                <i class="icon ion-clock p-color"></i>
+	              </icon>
+	              <text class="p-font p-color-grey">{{item.remaining}} minutes</text>
+	            </remaining>            
+	          </footer>
+	        </wall-item>
+	      </wall>
+	    </ion-content>
+
+	</view>
+
+</ctrl>

@@ -1,0 +1,12 @@
+@media
+	(width: 1024px) and (height:768px) and (orientation:landscape),
+	(width: 962px) and (height:601px) and (orientation:landscape),
+	(width: 1280px) and (height:800px) and (orientation:landscape),
+	(width: 962px) and (height:602px) and (orientation:landscape),
+	(width: 1024px) and (height:600px) and (orientation:landscape),
+	(width: 683px) and (height:400px) and (orientation:landscape),
+	(width: 1280px) and (height:720px) and (orientation:landscape),
+	(width: 1366px) and (height:768px) and (orientation:landscape)
+{
+	
+}	

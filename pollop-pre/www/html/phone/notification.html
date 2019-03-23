@@ -1,0 +1,17 @@
+<ctrl ng-controller="NotificationCtrl">
+
+	<view class="p-background-color-2 {{show_notification}}">
+
+		<notification-close ng-click="close()">
+
+			<icon>
+				<i class="icon ion-close p-color"></i>
+			</icon>
+
+		</notification-close>
+
+		<notification-content ng-bind-html="html"></notification-content>
+
+	</view>
+
+</ctrl>

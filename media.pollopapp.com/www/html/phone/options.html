@@ -1,0 +1,17 @@
+<ctrl ng-controller="OptionsCtrl">
+
+	<view class="p-background-color-3 {{stateOptions}}">    
+
+        <row>
+            <column class="col-1-5"></column>
+            <column class="col-1-5" ng-bind-html="items[0].content" ng-click="changeOption(0)"></column>
+            <column class="col-1-5" ng-bind-html="items[1].content" ng-click="changeOption(1)"></column>
+            <column class="col-1-5" ng-bind-html="items[2].content" ng-click="changeOption(2)"></column>
+            <column class="col-1-5"></column>
+        </row>
+
+        <options-indicator class="{{stateOptionsIndicator}}"></options-indicator>
+
+	</view>
+
+</ctrl>

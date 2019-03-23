@@ -1,0 +1,311 @@
+<ion-modal-view style="height:100%;">    
+    
+	<ion-header-bar class="p-backcolor">
+
+		<h1 class="title p-color-white">Erhan Emre Eroğlu</h1>	
+
+	</ion-header-bar>
+
+    <div class="p-arrow p-arrow-animate {{nextPoll}}" ng-click="closeModal('yesNoPoll')">
+        <i class="icon ion-android-close p-arrow-animate-i {{nextPoll}}"></i>
+    </div>
+
+    <div class="p-arrow-left {{nextPoll}}" ng-click="closeAll()">
+        <i class="icon ion-home {{nextPoll}}"></i>
+    </div>
+
+    <div class="p-poll p-options {{nextPoll}}">
+
+                <div class="row">
+
+                    <div class="col col-20"></div>
+                    <div class="col col-20">
+                        
+                        <i class="icon ion-stats-bars"></i>
+
+                    </div>
+                    <div class="col col-20">
+                        
+                        <i class="icon ion-arrow-return-left"></i>
+
+                    </div>                    
+                    <div class="col col-20">                    
+                        
+                        <i class="icon ion-ios-people"></i>
+
+                    </div>
+                    <div class="col col-20"></div>
+
+                </div>
+
+            </div>
+
+    <ion-slide-box class="p-poll-slider" show-pager="false" active-slide="pollActiveSlide" on-slide-changed="onPollSlideChanged($index)" does-continue="false">
+
+        <ion-slide class="p-slide" ng-repeat="i in [1,2,3,4,5,6,7,8,9]" ng-click="showFooter('div')">
+
+            <ion-content class="p-poll">    
+
+            	<ion-refresher pulling-text="" on-refresh="refresh()"></ion-refresher>
+
+                <ion-list>
+                                
+                    <ion-item class="item item-avatar item-button-right">
+                        <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10338221_10152576853520996_5185319332419852678_n.jpg?oh=1050ca99ab67aecce729b25a462b8393&oe=5623A992&__gda__=1444212935_5bd3e7b096d2e0e3740093c3cadfc9f1" />                
+                        <p>{{i}}) Türkiye sizce hükümetsiz ne kadar devam edecek?</p>
+                        <button class="button button-clear first-button p-color">
+                            <i class="icon ion-android-star-outline"></i>
+                        </button>                        
+                    </ion-item>   
+                                            
+                    <div class="row">
+
+                        <div class="col">
+                            <button class="button button-clear">
+                                <i class="icon ion-thumbsup"></i>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="button button-clear">
+                                <i class="icon ion-thumbsdown"></i>
+                            </button>
+                        </div>
+
+                    </div>                                                     
+            
+                </ion-list>
+
+            </ion-content>
+
+        </ion-slide>    
+
+    </ion-slide-box>
+
+</ion-modal-view>
+
+<style type="text/css">
+
+.p-poll-slider
+{
+    height: 100%;
+    top:0px;    
+}
+
+.p-poll-slider .p-slide
+{
+    height: 100%;
+}
+
+.p-poll .first-button
+{
+    margin-top: 10px;
+    color:#F96D2B;
+}
+
+.p-poll .first-button i:before
+{
+    font-size:35px;
+}
+
+.p-poll .second-button
+{
+    margin-top: 45px;
+    color:#F96D2B;
+}
+
+.p-poll p
+{
+    white-space: normal;
+}
+
+.p-poll .item:first-child
+{
+    border-bottom-color:#F96D2B;
+    border-bottom-width: 3px;
+}
+
+.p-poll .card
+{
+    padding-top: 10px;
+}
+
+.p-poll .card p
+{    
+    padding-bottom:10px;
+}
+
+.p-arrow
+{
+    position: absolute;    
+    background-color: rgb(249, 109, 43);
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    border-radius: 50%;
+    border: 4px solid white;    
+}
+
+.p-arrow-animate
+{
+    right: -55px;
+    bottom: -55px;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+}
+
+.p-arrow-animate.nextPoll
+{    
+    right: -35px;
+    bottom: -35px;    
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;    
+}
+
+.p-arrow i
+{
+    color: #fff;    
+    font-weight: 500;    
+    top: 17px;
+    position: absolute;        
+}
+
+.p-arrow i.p-arrow-animate-i
+{
+    font-size: 20px;
+    margin-left: 20px;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+}
+
+.p-arrow i.p-arrow-animate-i.nextPoll
+{    
+    font-size: 35px;    
+    margin-left: 25px;    
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;   
+}
+
+.p-arrow-left
+{
+    position: absolute;
+    left: -55px;
+    bottom: -55px;
+    background-color: rgb(249, 109, 43);
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    border-radius: 50%;
+    border: 4px solid white;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;       
+}
+
+.p-arrow-left.nextPoll
+{
+    position: absolute;
+    left: -35px;
+    bottom: -35px;
+    background-color: rgb(249, 109, 43);
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    border-radius: 50%;
+    border: 4px solid white;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;   
+}
+
+.p-arrow-left i
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    left: 58px;
+    top: 17px;
+    position: absolute;    
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;       
+}
+
+.p-arrow-left i.nextPoll
+{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    left: 40px;
+    top: 22px;
+    position: absolute;    
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;    
+}
+
+.p-poll.p-options.nextPoll
+{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    bottom: 0;
+    z-index: 2;
+    background-color: #FFDECD;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms; 
+}
+
+.p-poll.p-options
+{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    z-index: 2;
+    background-color: #FFDECD;
+    -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -moz-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -o-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms;
+    -ms-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 800ms; 
+}
+
+.p-poll.p-options .row
+{
+    padding: 0;
+}
+
+.p-poll.p-options .col-20 i
+{
+    color: #F96D2B;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;    
+}
+
+.p-poll.p-options .col-20:nth-child(3) i
+{
+    color: #F96D2B;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;    
+}
+
+.p-poll.p-options .col-20:nth-child(3)
+{
+    padding-top: 2px;    
+}
+</style>

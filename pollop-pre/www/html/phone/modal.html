@@ -1,0 +1,21 @@
+<ctrl ng-controller="ModalCtrl">
+
+	<view class="{{show_modal}}">
+
+		<modal-header class="p-background-color">{{title}}</modal-header>	
+
+		<modal-content ng-bind-html="html"></modal-content>
+
+		<modal-main class="p-background-color">
+			<i class="icon ion-home p-color-2"></i>
+		</modal-main>
+
+		<modal-options class="p-background-color-2 {{show_modalOptions}}"></modal-options>
+
+		<modal-close class="p-background-color" ng-click="close()">
+			<i class="icon ion-close p-color-2"></i>
+		</modal-close>
+
+	</view>
+
+</ctrl>

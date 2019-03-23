@@ -1,0 +1,55 @@
+<ctrl ng-controller="PollImageCtrl">
+
+	<view class="{{statePollImagePage}}">
+		
+	<content>
+        <avatar>
+          <img src="{{poll.avatar}}" />
+        </avatar>
+        <text>
+          <name class="p-font">
+            {{poll.title}}<asks class="p-font p-color-grey"> soruyor:</asks>
+          </name>
+          <question class="p-font p-color-grey">
+           {{poll.question}}
+          </question>
+        </text>
+      </content>
+      <footer>
+        <attendance>
+          <icon>
+            <i class="icon ion-ios-people p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.attendance}} kişi</text>
+        </attendance>
+        <remaining>
+          <icon>
+            <i class="icon ion-clock p-color"></i>
+          </icon>
+          <text class="p-font p-color-grey">{{poll.remaining}} dk.</text>
+        </remaining>
+      </footer>
+      <ion-content style="position: absolute;width: 100%;height: calc(100% - 200px);top: 150px;">
+        <choices>
+          <choice ng-repeat="choice in poll.choices">
+            <photo>
+              <img src="{{choice.image}}" ng-click="preview(choice.index)" />
+            </photo>
+            <choice-text class="{{choice.state}}">
+              <text class="p-font" ng-click="choose(choice.index)">{{choice.text}}</text>              
+            </choice-text>
+          </choice>
+        </choices>
+      </ion-content>
+      <preview class="{{statePreview}}">
+        <mask ng-click="closePreview()"></mask>
+        <photo>
+          <img src="{{image}}" />
+        </photo>
+        <choose class="p-background-color" ng-click="choose(choice.index)">{{choice.text}}</choose>
+      </preview>
+      <bottom-bar class="p-background-color p-font" ng-click="close()">Geri Dön</bottom-bar> 
+      <message-box class="p-font p-color {{messageBox}}">{{message}}</message-box>
+	</view>
+
+</ctrl>
